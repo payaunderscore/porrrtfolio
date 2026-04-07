@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Porrrtfolio</title>
+		<meta name="description" content="Portfolio!">
+		<link rel="stylesheet" href="../style.css">
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <div class="add-background"></div>
+
+        <header>
+            <nav>
+                <h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/" aria-current="page">start!</a></li>
+					<li class="nav-item"><a href="/dashboard/">dashboard</a></li>
+				</ul>
+			</nav>
+        </header>
+
+        <main id="justskip" class="content">
+            <div class="main-content">
+                <heading-anchors>
+                    <center><h1>Dashboard</h1></center>
+                    <hr>
+                    <center>There are currently</center>
+                    <div class="funnyboxes">
+                        <div class="funnybox">
+                            <h2>3</h2><p>quizzes</p>
+                        </div>
+                        <div class="funnybox">
+                            <h2>1</h2><p>lab</p>
+                        </div>
+                        <div class="funnybox">
+                            <h2>0</h2><p>exams</p>
+                        </div>
+                        <div class="funnybox">
+                            <h2>4</h2><p>total</p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="funnyboxes">
+                        <div class="funnybox">
+                            <img src="../img/quiz/quiz1.jpg">
+                            <p>Quiz No. 1</p>
+                        </div>
+                        <div class="funnybox">
+                            <img src="../img/quiz/quiz2.jpg">
+                            <p>Quiz No. 2</p>
+                        </div>
+                        <div class="funnybox">
+                            <img src="../img/quiz/quiz3.jpg">
+                            <p>Quiz No. 3</p>
+                        </div>
+                        <div class="funnybox">
+                            <img src="../img/quiz/lab1.jpg">
+                            <p>Lab No. 1</p>
+                        </div>
+                    </div>
+
+                </heading-anchors>
+            </div>
+        </main>
+
+        <style>
+            .funnyboxes {
+                display: flex;
+                flex-direction: row;
+                padding: 10px;
+                gap: 10px;
+                align-items: center;
+                justify-content: center;
+            }
+            .funnybox {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                padding: 10px;
+                align-items: center;
+                align-self: center;
+
+                min-width: 100px;
+
+                justify-content: center;
+
+                background-color: rgba(255, 255, 255, 0.4);
+                border-radius: 16px;
+            }
+            .funnybox > p {
+                color: black;
+            }
+            .funnybox > h2 {
+                color: black;
+                margin-top: 20px;
+                margin-bottom: -4px;
+                line-height: 0%;
+            }
+            .funnybox > img {
+                border-radius: 16px;
+                max-width: 80%;
+            }
+        </style>
+    </body>
+</html>
+
