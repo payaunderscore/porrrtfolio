@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Porrrtfolio</title>
 		<meta name="description" content="Portfolio!" />
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="../../style.css" />
 		<link rel="icon" type="image/x-icon" href="favicon.ico" />
 	</head>
 	<body>
@@ -39,33 +39,35 @@
 		<main id="justskip" class="content">
 			<div class="main-content">
 				<heading-anchors>
-					<center><h1>Velkommen!</h1></center>
+					<center><h1>Upload Exam</h1></center>
 					<hr />
-					<div class="flexfunny">
-						<img src="./img/me.jpg" width="30%" alt="Me!" />
-						<div class="portfolio-about-text">
-							<b style="font-size: 32px"
-								>Shawn Louise S. Elisteria</b
-							>
-							<br />
-							<i>programmer, lazy person | 251100118 | CS1D</i>
-							<hr />
-							<div
-								style="
-									display: flex;
-									align-items: center;
-									flex-flow: column;
-								"
-							>
-								<center>
-									<br />
-									I like programming stuff and video james :)
-								</center>
-							</div>
-						</div>
+					<div class="subcontent">
+						Name
+						<input type="text" id="nameInput" />
+						File
+						<input
+							type="file"
+							id="fileInput"
+							onchange="changeInputImage()"
+						/>
+						<img id="imagePreview" />
+						<button type="button" onclick="sendInput()">
+							Submit
+						</button>
 					</div>
 				</heading-anchors>
 			</div>
 		</main>
+
+		<style>
+			.subcontent {
+				display: flex;
+				flex-direction: column;
+				padding: 10px;
+				gap: 2px;
+			}
+		</style>
+
+		<script src="script.js"></script>
 	</body>
 </html>
